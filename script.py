@@ -48,6 +48,7 @@ def run_stock_job():
             writer.writerow(row)
     print(f'Wrote {len(tickers)} rows to {output_csv}')
 
+# If file is executed directly, run the job once
 if __name__ == '__main__':
     run_stock_job()
 
